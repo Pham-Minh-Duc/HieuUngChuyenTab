@@ -1,0 +1,32 @@
+*{
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tab-list{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+}
+.tab-list .tab-item{
+    margin: 20px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 25px;
+    background-color: #ccc;
+    text-align: center;
+}
+.tab-list .tab-item.active{
+    background-color: #0a6dbd;
+    color: aliceblue;
+}
+.tab-list .tab-item:hover {
+    background-color: #0a6dbd;
+    color: aliceblue;
+    transition: 0.5s;
+}
+.tab-content{
+    display: none;
+}
+.tab-content.active{
+    display: block;
+}
